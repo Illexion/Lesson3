@@ -32,10 +32,11 @@ public class Lesson3 {
                 if (a == 1) {
                     count = 3;
                     System.out.println("Игра перезапущена!");
+                    randomNum = genRandomInt(9);
                 } else {
                     System.out.println("Игра совсем совсем окончена, спасибо!");
                     count = 0;
-                    randomNum = genRandomInt(9);
+
                 }
             }
         } while (count > 0);
