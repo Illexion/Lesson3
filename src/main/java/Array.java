@@ -15,11 +15,8 @@ public class Array {
 
         Arrays.fill(unknownArray, "#");
 
-        for (String s : unknownArray) {// посоветовала идея) такую конструкцию применять предпочтительнее обычного for ?
-            System.out.print(s);
-        }
-
-        System.out.println(" Введи слово:");
+        System.out.println("Программа загадала: " + guessWord);
+        System.out.println("Введи слово, как будто не знаешь ответ:");
         String userAnswer = sc.nextLine();
 
 
@@ -30,7 +27,7 @@ public class Array {
                 }
             }
 
-            for (String s : unknownArray) {
+            for (String s : unknownArray) {// посоветовала идея) такую конструкцию применять предпочтительнее обычного for ?
                 System.out.print(s);
             }
 
@@ -45,8 +42,6 @@ public class Array {
     public static String randomWord(String[] wordArray) {
         Random random = new Random();
         int randomWordNumber = random.nextInt(wordArray.length + 1);
-        String guessWord = wordArray[randomWordNumber];
-        System.out.println("Программа загадала: " + guessWord);
-        return guessWord;
+        return wordArray[randomWordNumber];
     }
 }
