@@ -15,7 +15,7 @@ public class Array {
 
         Arrays.fill(unknownArray, "#");
 
-        for (String s : unknownArray) {// посоветовала идея) такую конструкцию применять предпочтительнее обчного if ?
+        for (String s : unknownArray) {// посоветовала идея) такую конструкцию применять предпочтительнее обычного for ?
             System.out.print(s);
         }
 
